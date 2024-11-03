@@ -1,26 +1,26 @@
 function updateTime() {
-  // Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  // Riyadh
+  let riyadhElement = document.querySelector("#riyadh");
+  if (riyadhElement) {
+    let riyadhDateElement = riyadhElement.querySelector(".date");
+    let riyadhTimeElement = riyadhElement.querySelector(".time");
+    let riyadhTime = moment().tz("Asia/Riyadh");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    riyadhDateElement.innerHTML = riyadhTime.format("MMMM	Do YYYY");
+    riyadhTimeElement.innerHTML = riyadhTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  // Lagos
+  let lagosElement = document.querySelector("#lagos");
+  if (lagosElement) {
+    let lagosDateElement = lagosElement.querySelector(".date");
+    let lagosTimeElement = lagosElement.querySelector(".time");
+    let lagosTime = moment().tz("Africa/Lagos");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    lagosDateElement.innerHTML = lagosTime.format("MMMM	Do YYYY");
+    lagosTimeElement.innerHTML = lagosTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -44,6 +44,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+  <a href="/">All cities</a>
   `;
 }
 
