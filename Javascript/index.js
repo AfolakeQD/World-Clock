@@ -24,6 +24,19 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+   // Tel Aviv
+  let telAvivElement = document.querySelector("#telaviv");
+  if (telAvivElement) {
+    let telAvivDateElement = telAvivElement.querySelector(".date");
+    let telAvivTimeElement = telAvivElement.querySelector(".time");
+    let telAvivTime = moment().tz("Asia/Tel_Aviv");
+
+    telAvivDateElement.innerHTML = telAvivTime.format("MMMM	Do YYYY");
+    telAvivElement.innerHTML = telAvivTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
