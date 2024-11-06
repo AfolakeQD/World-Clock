@@ -33,7 +33,7 @@ function updateTime() {
     let telAvivTime = moment().tz("Asia/Tel_Aviv");
 
     telAvivDateElement.innerHTML = telAvivTime.format("MMMM	Do YYYY");
-    telAvivElement.innerHTML = telAvivTime.format(
+    telAvivTimeElement.innerHTML = telAvivTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
